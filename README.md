@@ -14,4 +14,4 @@ Simultaneously i've created same plugn for Perl5, because i'm really better fami
 
 #See also
 
-You may find Perl5 plugin in other repo: 
+You may find Perl5 plugin in other repo: https://github.com/hurricup/Perl5-IDEA
