@@ -11,11 +11,11 @@ import com.intellij.lang.Language;
  *
  * @author ilyas
  */
-public class Perl6Language extends Language {
+public class PerlLanguage extends Language {
 
-	public static final Perl6Language INSTANCE = new Perl6Language();
+	public static final PerlLanguage INSTANCE = new PerlLanguage();
 
-	public Perl6Language() {
+	public PerlLanguage() {
 		super("Perl6");
 	}
 

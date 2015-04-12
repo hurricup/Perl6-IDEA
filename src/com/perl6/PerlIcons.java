@@ -6,7 +6,7 @@ package com.perl6;
 import com.intellij.openapi.util.IconLoader;
 import javax.swing.*;
 
-public class Perl6Icons
+public class PerlIcons
 {
 	public static final Icon FILE = IconLoader.getIcon("/com/perl6/icons/perl6.png");
 }

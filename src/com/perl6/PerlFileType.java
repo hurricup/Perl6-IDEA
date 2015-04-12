@@ -7,13 +7,13 @@ import org.jetbrains.annotations.Nullable;
 import javax.swing.*;
 import com.intellij.lang.Language;
 
-public class Perl6FileType extends LanguageFileType
+public class PerlFileType extends LanguageFileType
 {
-	public static final Perl6FileType PERL6_FILE_TYPE = new Perl6FileType();
+	public static final PerlFileType PERL6_FILE_TYPE = new PerlFileType();
 	public static final Language PERL6_LANGUAGE = PERL6_FILE_TYPE.getLanguage();
 
-	private Perl6FileType() {
-		super(Perl6Language.INSTANCE);
+	private PerlFileType() {
+		super(PerlLanguage.INSTANCE);
 	}
 
 	@NotNull
@@ -37,6 +37,6 @@ public class Perl6FileType extends LanguageFileType
 	@Nullable
 	@Override
 	public Icon getIcon() {
-		return Perl6Icons.FILE;
+		return PerlIcons.FILE;
 	}
 }

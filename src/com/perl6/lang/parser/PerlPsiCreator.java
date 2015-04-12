@@ -9,7 +9,7 @@ import com.intellij.psi.tree.IElementType;
  * Created by hurricup on 12.04.2015.
  * Creates PSI element by given AST node
  */
-public class Perl6PsiCreator implements Perl6ElementTypes
+public class PerlPsiCreator implements PerlElementTypes
 {
 	public static PsiElement createElement(ASTNode node)
 	{

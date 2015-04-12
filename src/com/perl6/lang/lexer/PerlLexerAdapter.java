@@ -7,8 +7,8 @@ import com.intellij.lexer.FlexAdapter;
 
 import java.io.Reader;
 
-public class Perl6LexerAdapter extends FlexAdapter {
-	public Perl6LexerAdapter() {
-		super(new Perl6Lexer((Reader) null));
+public class PerlLexerAdapter extends FlexAdapter {
+	public PerlLexerAdapter() {
+		super(new PerlLexer((Reader) null));
 	}
 }

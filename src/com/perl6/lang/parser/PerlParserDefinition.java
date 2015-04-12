@@ -16,29 +16,27 @@ import com.intellij.psi.PsiFile;
 import com.intellij.psi.TokenType;
 import com.intellij.psi.tree.IFileElementType;
 import com.intellij.psi.tree.TokenSet;
-import com.perl6.Perl6FileType;
-import com.perl6.Perl6Language;
-import com.perl6.lang.lexer.Perl6Lexer;
-import com.perl6.lang.lexer.Perl6TokenTypes;
-import com.perl6.lang.psi.Perl6File;
-import com.perl6.lang.parser.Perl6Parser;
-import com.perl6.lang.psi.Perl6File;
+import com.perl6.PerlFileType;
+import com.perl6.PerlLanguage;
+import com.perl6.lang.lexer.PerlLexer;
+import com.perl6.lang.lexer.PerlTokenTypes;
+import com.perl6.lang.psi.PerlFile;
 import org.jetbrains.annotations.NotNull;
 import com.intellij.psi.tree.IStubFileElementType;
 
 import java.io.Reader;
 
-public class Perl6ParserDefinition implements ParserDefinition{
+public class PerlParserDefinition implements ParserDefinition{
 	public static final TokenSet WHITE_SPACES = TokenSet.create(TokenType.WHITE_SPACE);
-	public static final TokenSet COMMENTS = TokenSet.create(Perl6TokenTypes.P6_COMMENT);
-	public static final IStubFileElementType PERL6_FILE = new IStubFileElementType(Perl6FileType.PERL6_LANGUAGE);
+	public static final TokenSet COMMENTS = TokenSet.create(PerlTokenTypes.PERL_COMMENT);
+	public static final IStubFileElementType PERL6_FILE = new IStubFileElementType(PerlFileType.PERL6_LANGUAGE);
 
-	public static final IFileElementType FILE = new IFileElementType(Language.<Perl6Language>findInstance(Perl6Language.class));
+	public static final IFileElementType FILE = new IFileElementType(Language.<PerlLanguage>findInstance(PerlLanguage.class));
 
 	@NotNull
 	@Override
 	public Lexer createLexer(Project project) {
-		return new FlexAdapter(new Perl6Lexer((Reader) null));
+		return new FlexAdapter(new PerlLexer((Reader) null));
 	}
 
 	@NotNull
@@ -58,7 +56,7 @@ public class Perl6ParserDefinition implements ParserDefinition{
 
 	@NotNull
 	public PsiParser createParser(final Project project) {
-		return new Perl6Parser();
+		return new PerlParser();
 	}
 
 	@Override
@@ -67,7 +65,7 @@ public class Perl6ParserDefinition implements ParserDefinition{
 	}
 
 	public PsiFile createFile(FileViewProvider viewProvider) {
-		return new Perl6File(viewProvider);
+		return new PerlFile(viewProvider);
 	}
 
 	public SpaceRequirements spaceExistanceTypeBetweenTokens(ASTNode left, ASTNode right) {
@@ -76,6 +74,6 @@ public class Perl6ParserDefinition implements ParserDefinition{
 
 	@NotNull
 	public PsiElement createElement(ASTNode node) {
-		return Perl6PsiCreator.createElement(node);
+		return PerlPsiCreator.createElement(node);
 	}
 }

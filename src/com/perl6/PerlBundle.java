@@ -12,7 +12,8 @@ import java.lang.ref.Reference;
 import java.lang.ref.SoftReference;
 import java.util.ResourceBundle;
 
-public class Perl6Bundle {
+public class PerlBundle
+{
 
 	private static Reference<ResourceBundle> ourBundle;
 

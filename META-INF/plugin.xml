@@ -23,8 +23,8 @@
   -->
 
   <extensions defaultExtensionNs="com.intellij">
-        <fileTypeFactory implementation="com.perl6.Perl6TypeFactory"/>
-        <lang.parserDefinition language="Perl6" implementationClass="com.perl6.lang.parser.Perl6ParserDefinition"/>
+        <fileTypeFactory implementation="com.perl6.PerlTypeFactory"/>
+        <lang.parserDefinition language="Perl6" implementationClass="com.perl6.lang.parser.PerlParserDefinition"/>
   </extensions>
 
   <application-components>

@@ -6,21 +6,21 @@ package com.perl6.lang.psi;
 import com.intellij.extapi.psi.PsiFileBase;
 import com.intellij.openapi.fileTypes.FileType;
 import com.intellij.psi.FileViewProvider;
-import com.perl6.Perl6FileType;
-import com.perl6.Perl6Language;
+import com.perl6.PerlFileType;
+import com.perl6.PerlLanguage;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
 
-public class Perl6File extends PsiFileBase {
-	public Perl6File(@NotNull FileViewProvider viewProvider) {
-		super(viewProvider, Perl6Language.INSTANCE);
+public class PerlFile extends PsiFileBase {
+	public PerlFile(@NotNull FileViewProvider viewProvider) {
+		super(viewProvider, PerlLanguage.INSTANCE);
 	}
 
 	@NotNull
 	@Override
 	public FileType getFileType() {
-		return Perl6FileType.PERL6_FILE_TYPE;
+		return PerlFileType.PERL6_FILE_TYPE;
 	}
 
 	@Override

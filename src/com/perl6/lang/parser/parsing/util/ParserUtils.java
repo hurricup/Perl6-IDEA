@@ -4,7 +4,7 @@ import com.intellij.lang.PsiBuilder;
 import com.intellij.lang.PsiBuilder.Marker;
 import com.intellij.psi.tree.IElementType;
 import com.intellij.psi.tree.TokenSet;
-import com.perl6.lang.lexer.Perl6TokenTypes;
+import com.perl6.lang.lexer.PerlTokenTypes;
 
 public abstract class ParserUtils {
 
@@ -188,10 +188,10 @@ public abstract class ParserUtils {
         return true;
       }
 
-      if (Perl6TokenTypes.P6_LCURLY == type) {
+      if (PerlTokenTypes.PERL_LCURLY == type) {
         braceLevel++;
       }
-      else if (Perl6TokenTypes.P6_RCURLY == type) {
+      else if (PerlTokenTypes.PERL_RCURLY == type) {
         braceLevel--;
       }
       builder.advanceLexer();

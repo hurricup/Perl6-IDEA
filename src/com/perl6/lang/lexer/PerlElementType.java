@@ -5,16 +5,16 @@ package com.perl6.lang.lexer;
  */
 
 import com.intellij.psi.tree.IElementType;
-import com.perl6.Perl6FileType;
+import com.perl6.PerlFileType;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 
-public class Perl6ElementType  extends IElementType
+public class PerlElementType extends IElementType
 {
 	private String debugName = null;
 
-	public Perl6ElementType(@NotNull @NonNls String debugName) {
-		super(debugName, Perl6FileType.PERL6_LANGUAGE);
+	public PerlElementType(@NotNull @NonNls String debugName) {
+		super(debugName, PerlFileType.PERL6_LANGUAGE);
 		this.debugName = debugName;
 	}
 
