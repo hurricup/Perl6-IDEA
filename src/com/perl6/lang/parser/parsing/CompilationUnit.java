@@ -21,10 +21,10 @@ public class CompilationUnit implements Perl6ElementTypes {
 	//    }
 
 		while (!builder.eof()) {
-			if (!Separators.parse(builder)) {
-				builder.error(Perl6Bundle.message("separator.expected"));
-			}
-			if (builder.eof()) break;
+//			if (!Separators.parse(builder)) {
+//				builder.error(Perl6Bundle.message("separator.expected"));
+//			}
+//			if (builder.eof()) break;
 			if (!parser.parseStatement(builder, false)) {
 //				if (!parser.parseStatementWithImports(builder)) {
 				ParserUtils.wrapError(builder, Perl6Bundle.message("unexpected.symbol"));

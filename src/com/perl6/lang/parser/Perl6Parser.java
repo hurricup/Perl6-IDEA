@@ -128,8 +128,13 @@ public class Perl6Parser  implements PsiParser
 		}
 
 		if (parseDeclaration(builder, false, false, null)) return true;
-*/
 		return AssignmentExpression.parse(builder, this, true);
+*/
+//		System.err.println(builder.getTokenType());
+//		System.err.println(builder.getTokenText());
+		builder.advanceLexer();
+
+		return true;
 	}
 
 }
