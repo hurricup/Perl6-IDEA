@@ -18,7 +18,7 @@ public class PerlBundle
 	private static Reference<ResourceBundle> ourBundle;
 
 	@NonNls
-	private static final String BUNDLE = "com.perl6.Perl6Bundle";
+	private static final String BUNDLE = "com.perl6.PerlBundle";
 
 	@NotNull
 	public static String message(@PropertyKey(resourceBundle = BUNDLE)String key, Object... params) {

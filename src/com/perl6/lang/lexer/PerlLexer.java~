@@ -20,7 +20,7 @@ import org.jetbrains.annotations.NotNull;
  * on 12.04.15 18:58 from the specification file
  * <tt>C:/Repository/Perl6-IDEA/src/com/perl6/lang/lexer/Perl.flex</tt>
  */
-public class PerlLexer implements FlexLexer, Perl6TokenTypes {
+public class PerlLexer implements FlexLexer, PerlTokenTypes {
   /** initial size of the lookahead buffer */
   private static final int ZZ_BUFFERSIZE = 16384;
 

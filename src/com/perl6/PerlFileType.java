@@ -9,8 +9,8 @@ import com.intellij.lang.Language;
 
 public class PerlFileType extends LanguageFileType
 {
-	public static final PerlFileType PERL6_FILE_TYPE = new PerlFileType();
-	public static final Language PERL6_LANGUAGE = PERL6_FILE_TYPE.getLanguage();
+	public static final PerlFileType PERL_FILE_TYPE = new PerlFileType();
+	public static final Language PERL_LANGUAGE = PERL_FILE_TYPE.getLanguage();
 
 	private PerlFileType() {
 		super(PerlLanguage.INSTANCE);

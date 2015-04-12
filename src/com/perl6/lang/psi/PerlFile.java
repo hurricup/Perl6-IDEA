@@ -20,7 +20,7 @@ public class PerlFile extends PsiFileBase {
 	@NotNull
 	@Override
 	public FileType getFileType() {
-		return PerlFileType.PERL6_FILE_TYPE;
+		return PerlFileType.PERL_FILE_TYPE;
 	}
 
 	@Override

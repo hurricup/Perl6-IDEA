@@ -14,12 +14,12 @@ public class PerlElementType extends IElementType
 	private String debugName = null;
 
 	public PerlElementType(@NotNull @NonNls String debugName) {
-		super(debugName, PerlFileType.PERL6_LANGUAGE);
+		super(debugName, PerlFileType.PERL_LANGUAGE);
 		this.debugName = debugName;
 	}
 
 	public String toString() {
-		return "Perl6TokenType " + super.toString();
+		return "PerlTokenType " + super.toString();
 	}
 
 //	public static abstract class PsiCreator extends Perl6ElementType {

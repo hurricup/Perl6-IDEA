@@ -8,6 +8,6 @@ public class PerlTypeFactory extends FileTypeFactory
 {
 	@Override
 	public void createFileTypes(@NotNull FileTypeConsumer fileTypeConsumer) {
-		fileTypeConsumer.consume(PerlFileType.PERL6_FILE_TYPE, "pm");
+		fileTypeConsumer.consume(PerlFileType.PERL_FILE_TYPE, "pm");
 	}
 }

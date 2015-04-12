@@ -22,7 +22,7 @@ public class CompilationUnit implements PerlElementTypes
 
 		while (!builder.eof()) {
 //			if (!Separators.parse(builder)) {
-//				builder.error(Perl6Bundle.message("separator.expected"));
+//				builder.error(PerlBundle.message("separator.expected"));
 //			}
 //			if (builder.eof()) break;
 			if (!parser.parseStatement(builder, false)) {

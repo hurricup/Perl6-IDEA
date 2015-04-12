@@ -3,7 +3,8 @@ package com.perl6.lang.lexer;
 /*
     http://jflex.de/manual.html
     http://www2.cs.tum.edu/projects/cup
-
+    IMPORTANT: ATM THERE IS Perl5 Syntax, just for research. Use https://github.com/perl6/std/blob/master/STD.pm6
+    to fill out syntax
 */
 
 import com.intellij.lexer.FlexLexer;

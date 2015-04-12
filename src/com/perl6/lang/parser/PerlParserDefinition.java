@@ -29,7 +29,7 @@ import java.io.Reader;
 public class PerlParserDefinition implements ParserDefinition{
 	public static final TokenSet WHITE_SPACES = TokenSet.create(TokenType.WHITE_SPACE);
 	public static final TokenSet COMMENTS = TokenSet.create(PerlTokenTypes.PERL_COMMENT);
-	public static final IStubFileElementType PERL6_FILE = new IStubFileElementType(PerlFileType.PERL6_LANGUAGE);
+	public static final IStubFileElementType PERL6_FILE = new IStubFileElementType(PerlFileType.PERL_LANGUAGE);
 
 	public static final IFileElementType FILE = new IFileElementType(Language.<PerlLanguage>findInstance(PerlLanguage.class));
 
