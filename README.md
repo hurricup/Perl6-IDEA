@@ -10,7 +10,7 @@ Simultaneously i've created same plugn for Perl5, because i'm really better fami
 
 #Current status
 
-* I've created basic JFlex lexer, that works but need tons of tunings.
+* Project hold, working on Perl5 plugin.
 
 #See also
 
